@@ -1,6 +1,6 @@
-from Langchain.text_splitter import CharacterTextSplitter
-from langchain.embeddings import SentenceTransformerEmbeddings
-from langchain.vectorstores import Crhoma
+from langchain_text_splitters import CharacterTextSplitter
+from langchain_community.embeddings import SentenceTransformerEmbeddings
+from langchain_community.vectorstores import Chroma
 from pypdf import PdfReader
 
 #1. leer el archivo PDF
