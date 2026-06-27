@@ -15,7 +15,7 @@ cohere_api_key = os.getenv("COHERE_API_KEY")
 hf_token = os.getenv("HF_TOKEN")
 
 if not cohere_api_key:
-    raise ValueError("⚠️ No se encontró la clave de Cohere en .env")
+    raise ValueError("No se encontró la clave de Cohere en .env")
 else:
     print("Clave de Cohere detectada correctamente")
 
@@ -54,7 +54,7 @@ while True:
     pregunta = input("\n¿Qué quieres que busque en el documento? (o escribe 'salir' para terminar): ")
 
     if pregunta.lower() in ["salir", "exit", "quit"]:
-        print("👋 Finalizando agente. ¡Hasta pronto!")
+        print("Finalizando agente. ¡Hasta pronto!")
         break
 
     llm_seleccionado = elegir_llm(pregunta)
